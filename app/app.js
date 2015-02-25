@@ -4,5 +4,10 @@
 (function () {
     'use strict';
 
-    angular.module('app', []);
+    angular.module('app', [
+        'ngAnimate',
+        'toaster',
+        'ui.router'
+    ]);
+
 }());

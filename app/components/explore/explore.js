@@ -11,6 +11,6 @@
     ExploreController.$inject = ['$scope'];
     function ExploreController($scope) {
         var vm = this;
-        vm.page = 'Explore';
+        vm.page = 'Explore me';
     }
 }());

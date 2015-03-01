@@ -26,6 +26,6 @@
                     templateUrl: 'components/explore/explore.html',
                     controller: 'Explore',
                     controllerAs: 'vm'
-                })
-        }])
+                });
+        }]);
 }());

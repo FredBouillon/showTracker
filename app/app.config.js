@@ -6,7 +6,7 @@
 
     angular
         .module('app')
-        .config(exceptionHandler)
+        .config(exceptionHandler);
         //** Can't remove the # from url because there is no backend **//
         //.config(['$locationProvider', function ($locationProvider) {
         //    $locationProvider.html5Mode(true);

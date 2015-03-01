@@ -1,0 +1,28 @@
+{
+  "predef": ["angular", "exports"],
+  "node": true,
+  "browser": true,
+  "esnext": true,
+  "bitwise": true,
+  "curly": false,
+  "eqeqeq": true,
+  "immed": true,
+  "indent": 4,
+  "latedef": false,
+  "newcap": false,
+  "noarg": true,
+  "undef": true,
+  "unused": false,
+  "strict": true,
+  "trailing": true,
+  "smarttabs": true,
+  "jquery": false,
+  "loopfunc" : true,
+  "validthis": true,
+  "globals": {
+    "logManager": true,
+    "logger": true,
+    "token": true,
+    "angular": true
+  }
+}

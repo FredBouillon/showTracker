@@ -6,12 +6,12 @@
 
     var systemEvents = {
         errorEvent: 'errorEvent'
-    }
+    };
 
     angular
         .module('app')
         .constant('Enums', {
             SystemEvents: systemEvents
-        })
+        });
 
 }());

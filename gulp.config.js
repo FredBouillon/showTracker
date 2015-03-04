@@ -1,10 +1,10 @@
 'use strict';
 module.exports = function() {
     var app = './app/';
-    var temp = '.tmp/';
+    var temp = app + '.tmp/';
     var config = {
         temp: temp,
-
+        app: app,
         /**
          * Files paths
          */
@@ -22,7 +22,7 @@ module.exports = function() {
             '!' + app + 'bower_components/**/*.js'
         ],
         css: temp + 'custom.css',
-        app: app,
+
 
         /**
          * Bower and NPM locations
@@ -31,7 +31,9 @@ module.exports = function() {
             json: require('./bower.json'),
             directory: app + 'bower_components/',
             ignorePath: '../..'
-        }
+        },
+
+        port: 3005
     };
 
     config.getWiredepDefaultOptions = function() {

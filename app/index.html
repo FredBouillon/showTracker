@@ -1,71 +1,71 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
+<head>
 
-        <title>ShowTracker</title>
-        <!--Can't remove the # from url because there is no backend-->
-        <!--<base href="/"/> -->
+    <title>ShowTracker</title>
+    <!--Can't remove the # from url because there is no backend-->
+    <!--<base href="/"/> -->
 
-        <!-- bower:css -->
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="bower_components/angularjs-toaster/toaster.css" />
-        <!-- endbower -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/angularjs-toaster/toaster.css" />
+    <!-- endbower -->
 
-        <!--inject:css-->
-        <link rel="stylesheet" href="/.tmp/custom.css">
-        <!--endinject-->
-
-
-
-    </head>
-
-    <body ng-app="app" ng-strict-di>
-
-        <nav ng-include="'components/home/navigation.html'"></nav>
-
-        <!-- Page Content -->
-        <div class="container">
+    <!--inject:css-->
+    <link rel="stylesheet" href=".tmp/custom.css">
+    <!--endinject-->
 
 
-            <div ui-view></div>
+
+</head>
+
+<body ng-app="app" ng-strict-di>
+
+<nav ng-include="'components/home/navigation.html'"></nav>
+
+<!-- Page Content -->
+<div class="container">
 
 
-            <hr>
+    <div ui-view></div>
 
-            <!-- Footer -->
-            <footer>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p>Copyright &copy; ShowTracker 2015</p>
-                    </div>
-                </div>
-            </footer>
 
-            <toaster-container toaster-options="{'position-class': 'toast-bottom-right'}"></toaster-container>
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy; ShowTracker 2015</p>
+            </div>
         </div>
-    </body>
+    </footer>
 
-    <!--bower:js-->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angularjs-toaster/toaster.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-    <!--endbower-->
+    <toaster-container toaster-options="{'position-class': 'toast-bottom-right'}"></toaster-container>
+</div>
+</body>
+
+<!--bower:js-->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angularjs-toaster/toaster.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<!--endbower-->
 
 
-    <!-- build:js1 scripts/main.js -->
-    <script src="app.js"></script>
-    <script src="app.config.js"></script>
-    <script src="app.run.js"></script>
-    <script src="app.routes.js"></script>
-    <script src="app.constants.js"></script>
+<!-- build:js1 scripts/main.js -->
+<script src="app.js"></script>
+<script src="app.config.js"></script>
+<script src="app.run.js"></script>
+<script src="app.routes.js"></script>
+<script src="app.constants.js"></script>
 
-    <script src="components/myShows/myShows.js"></script>
-    <script src="components/explore/explore.js"></script>
-    <!-- endbuild -->
+<script src="components/myShows/myShows.js"></script>
+<script src="components/explore/explore.js"></script>
+<!-- endbuild -->
 
 
 </html>
